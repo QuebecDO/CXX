@@ -43,6 +43,17 @@ void test()
 
 ## Headers
 
+   Comme toute convention C++, tous les fichiers `.cpp` devraient être accommodés d'un fichier `.h` / header. Encore, tout autre extension de fichier que `.h` doit être évité (comme `.hpp`) L'utilisation de fichiers header seul (non accommodé par un `.cpp`) est permis.
+
 ### Header Guards
 
+   As always headers must have header guards, and the naming of those should follow this pattern: `|PROJECT_NAME|_|FILENAME|_H_` (`|` are only there to specify that their content is just to describe what should be in place). `|PROJECT_NAME|` is not required if your files are within the boundaries of a source which will not be included as a dependency in any way in another project. So use it only if your project is intended to be included by other projects.
+
 ### Ordre d'inclusion 
+
+L'ordre d'inclusion devrait etre comme cela (chacun separe par un line feed):
+1. Le fichier `.h` accomodé
+2. Les headers standards de C++
+3. Les headers standards de C
+4. Dependences (tout ce qui est externe au projet)
+5. Headers de projet
