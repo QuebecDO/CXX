@@ -49,7 +49,8 @@ void test()
 
 ### Header Guards
 
-   As always headers must have header guards, and the naming of those should follow this pattern: `|PROJECT_NAME|_|FILENAME|_H_` (`|` are only there to specify that their content is just to describe what should be in place). `|PROJECT_NAME|` is not required if your files are within the boundaries of a source which will not be included as a dependency in any way in another project. So use it only if your project is intended to be included by other projects.
+(TO MAKE FULLY FRENCH (WITH ACCENTS ETC) LATER
+   Comme toujours les headers doivent avoir un header guard et le nomage de ceux-ci doit suivre ce pattern: `|NOM_DU_RPOJET|_|NOM_DU_FICHER|_H_` (`|` sont seulement presents pour specifier que leur contenu ne fait que decrire ce qui devrait etre present). `|NOM_DU_PROJET|` n'est pas necessaire si vos fichiers sont dans les limites d'une source qui n'a pas pour objectif d'etre inclue en tant que dependence de quelconque facon dans d'autre projet.
 
 ### Ordre d'inclusion 
 
