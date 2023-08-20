@@ -8,5 +8,19 @@
    Toute fonctionalité dans C++17 sera considéré, mais aucune provenant de versions supérieures. La convention devrait cependant être respecté pour les nouvelles versions a l'exception de cas d'obsolescence (Ce qui ne devrait certainement pas arriver pour des raisons évidentes).
 
 ## Nomage
+
+### Nomage de fichiers
+
+### Nomage de fonctions / methodes et variables
+
+### Nomage de declarations de type et de namespaces
+
 ## Styles de base
+
+### Brackets
+
 ## Headers
+
+### Header Guards
+
+### Ordre d'inclusion 
