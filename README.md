@@ -12,15 +12,34 @@
 
 ### Nomage de fichiers
 
-   Les fichiers headers et sources C++ devraient seulement avoir une terminaison `.cpp` ou `.h`, donc pas de `.cc` ou `.hpp`. Tout nom de fichier devrait soit inclure aucunes majuscules ou une au début de son nom et de chaque mot dans son nom. Examples: `test.h`, `VulkanLib.h`, `vulkanlib.h`. Les `-` et `_` sont interdits dans le nom des fichiers sauf s'il y a une raison spécifique de faire ainsi autre que "c'est beau".
+   Les fichiers headers et sources C++ devraient seulement avoir une terminaison `.cpp` ou `.h`, donc pas de `.cc` ou `.hpp`. Tout nom de fichier devrait soit inclure aucunes majuscules ou une au début de son nom et de chaque mot dans son nom. Examples valides: `test.h`, `VulkanLib.h`, `vulkanlib.h`. Les `-` et `_` sont interdits dans le nom des fichiers sauf s'il y a une raison spécifique de faire ainsi autre que "c'est beau".
 
 ### Nomage de fonctions / methodes et variables
 
-### Nomage de declarations de type et de namespaces
+Toutes fonctions, methodes et variables doivent utiliser la convention camel case.
+
+### Nomage de declarations de type et de namespaces 
+
+Toutes déclarations de type et namespace doit utiliser la convetion pascal case.
 
 ## Styles de base
 
 ### Brackets
+
+Aucune `{` ne devrait etre sur la meme ligne que son parent. Exemple:
+
+```C++
+// !! INVALIDE !!
+void test() {
+}
+
+// VALIDE
+void test()
+{
+}
+```
+
+(La meme chose s'applique aux classes, namespaces, enums, etc a l'exception des lambdas)
 
 ## Headers
 
