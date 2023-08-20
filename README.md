@@ -1,2 +1,6 @@
 # CXX
-C++ Writing Convention
+## Introduction
+## Version C++
+## Nomage
+## Styles de base
+## Headers
