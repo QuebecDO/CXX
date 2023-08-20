@@ -18,7 +18,7 @@
 
 Toutes fonctions, methodes et variables doivent utiliser la convention camel case.
 
-### Nomage de declarations de type et de namespaces 
+### Nomage de déclarations de type et de namespaces 
 
 Toutes déclarations de type et namespace doit utiliser la convetion pascal case.
 
