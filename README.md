@@ -1,3 +1,5 @@
+FILED WITH GRAMMAR MISTAKES, TO FIX AT FINAL VERSION
+
 # CXX
 
 ## Introduction
@@ -55,5 +57,6 @@ L'ordre d'inclusion devrait etre comme cela (chacun separe par un line feed):
 1. Le fichier `.h` accomodé
 2. Les headers standards de C++
 3. Les headers standards de C
-4. Dependences (tout ce qui est externe au projet)
-5. Headers de projet
+  a. AVERTISSEMENT: Ne jamais utiliser les `.h` de headers de la librairie standard C, utilisez plutôt ceux préfixés d'un "c"
+5. Dependences (tout ce qui est externe au projet)
+6. Headers de projet
