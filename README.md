@@ -26,7 +26,7 @@ Toutes déclarations de type et namespace doit utiliser la convetion pascal case
 
 ### Brackets
 
-Aucune `{` ne devrait etre sur la meme ligne que son parent. Exemple:
+Aucune `{` ne devrait être sur la même ligne que son parent. Exemple:
 
 ```C++
 // !! INVALIDE !!
@@ -39,7 +39,7 @@ void test()
 }
 ```
 
-(La meme chose s'applique aux classes, namespaces, enums, etc a l'exception des lambdas)
+(La même chose s'applique aux classes, namespaces, enums, etc a l'exception des lambdas)
 
 ## Headers
 
