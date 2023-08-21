@@ -49,7 +49,6 @@ void test()
 
 ### Header Guards
 
-(TO MAKE FULLY FRENCH (WITH ACCENTS ETC) LATER
    Comme toujours les headers doivent avoir un header guard et le nomage de ceux-ci doit suivre ce pattern: `|NOM_DU_RPOJET|_|NOM_DU_FICHER|_H_` (`|` sont seulement presents pour specifier que leur contenu ne fait que decrire ce qui devrait etre present). `|NOM_DU_PROJET|` n'est pas necessaire si vos fichiers sont dans les limites d'une source qui n'a pas pour objectif d'etre inclue en tant que dependence de quelconque facon dans d'autre projet.
 
 ### Ordre d'inclusion 
@@ -58,6 +57,6 @@ L'ordre d'inclusion devrait etre comme cela (chacun separe par un line feed):
 1. Le fichier `.h` accomodé
 2. Les headers standards de C++
 3. Les headers standards de C
-  a. AVERTISSEMENT: Ne jamais utiliser les `.h` de headers de la librairie standard C, utilisez plutôt ceux préfixés d'un "c"
+   a. AVERTISSEMENT: Ne jamais utiliser les `.h` de headers de la librairie standard C, utilisez plutôt ceux préfixés d'un "c"
 5. Dependences (tout ce qui est externe au projet)
 6. Headers de projet
