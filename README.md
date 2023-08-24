@@ -4,7 +4,7 @@ FILED WITH GRAMMAR MISTAKES, TO FIX AT FINAL VERSION (REFORMAT SECTIONS AND TITL
 
 ## Introduction
 
-   L'honneur de la meilleure convention d'écriture pour le C++ peut être sans aucune hésitation honoré à <a href="https://google.github.io/styleguide/cppguide.html#General_Naming_Rules">Google C++ Style Guide</a>, mais elle n'atteint tout de même pas nos attentes personnelles. C'est pourquoi avec une grande influence de celle-ci et de notre expérience, nous avons decidé de créer la nôtre. Nous n'avons pas pour objectif de la standardiser au monde entier, vous pouvez donc la considérer comme n'était rien de plus qu'une convention personnelle.
+>> L'honneur de la meilleure convention d'écriture pour le C++ peut être sans aucune hésitation honoré à <a href="https://google.github.io/styleguide/cppguide.html#General_Naming_Rules">Google C++ Style Guide</a>, mais elle n'atteint tout de même pas nos attentes personnelles. C'est pourquoi avec une grande influence de celle-ci et de notre expérience, nous avons decidé de créer la nôtre. Nous n'avons pas pour objectif de la standardiser au monde entier, vous pouvez donc la considérer comme n'était rien de plus qu'une convention personnelle.
 
 <br />
 
@@ -67,7 +67,7 @@ int test{5};
 
 ## Headers
 
-> Comme toute convention C++, tous les fichiers `.cpp` devraient être accommodés d'un fichier `.h` / header. Encore, tout autre extension de fichier que `.h` doit être évité (comme `.hpp`) L'utilisation de fichiers header seul (non accommodé par un `.cpp`) est permis.
+   Comme toute convention C++, tous les fichiers `.cpp` devraient être accommodés d'un fichier `.h` / header. Encore, tout autre extension de fichier que `.h` doit être évité (comme `.hpp`) L'utilisation de fichiers header seul (non accommodé par un `.cpp`) est permis.
 
 ### Header Guards
 
