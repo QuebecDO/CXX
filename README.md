@@ -8,7 +8,7 @@ FILED WITH GRAMMAR MISTAKES, TO FIX AT FINAL VERSION
 
 <br />
 
-La convention pour ajouter de nouvelles spécifications de style consiste a déterminer si celle-ci affecte l'utilisation du langage (ou nécessite des sous-sections) ou pas. Si oui, vous devez lui créer une nouvelle section H2 (suivit de H3 pour les sous-détails) si aucune n'est présente, mais autrement simplement l'ajouter dans la section "Styles de base". 
+La convention habituelle pour ajouter de nouvelles spécifications de style consiste a déterminer si celle-ci affecte l'utilisation du langage (ou nécessite des sous-sections) ou pas. Si oui, vous devez lui créer une nouvelle section H2 (suivit de H3 pour les sous-détails) si aucune n'est présente, mais autrement simplement l'ajouter dans la section "Styles de base". 
    
 ## Version C++
 
@@ -29,6 +29,18 @@ Toutes fonctions, methodes et variables doivent utiliser la convention camel cas
 Toutes déclarations de type et namespace doit utiliser la convetion pascal case.
 
 ## Styles de base
+
+### Initialisation de variables
+
+Utilisez l'opérateur `{}` pour initializer vos variables l'hors de leur déclaration. Exemple:
+
+```C++
+// !! INVALIDE !!
+int test = 5;
+
+// VALIDE
+int test{5};
+```
 
 ### Brackets
 
@@ -81,4 +93,5 @@ L'ordre d'inclusion devrait être comme cela (chacun separe par un line feed):
    a. AVERTISSEMENT: Ne jamais utiliser les `.h` de headers de la librairie standard C, utilisez plutôt ceux préfixés d'un "c"
 5. Dépendences (tout ce qui est externe au projet)
 6. Headers de projet
+
 
