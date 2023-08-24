@@ -8,7 +8,7 @@ FILED WITH GRAMMAR MISTAKES, TO FIX AT FINAL VERSION
 
 <br />
 
-   La convention pour ajouter de nouvelles spécifications de style consiste a déterminer si celle-ci affecte l'utilisation du langage (ou nécessite des sous-sections) ou pas. Si oui, vous devez lui créer une nouvelle section H2 (suivit de H3 pour les sous-détails) si aucune n'est présente, mais autrement simplement l'ajouter dans la section "Styles de base". 
+La convention pour ajouter de nouvelles spécifications de style consiste a déterminer si celle-ci affecte l'utilisation du langage (ou nécessite des sous-sections) ou pas. Si oui, vous devez lui créer une nouvelle section H2 (suivit de H3 pour les sous-détails) si aucune n'est présente, mais autrement simplement l'ajouter dans la section "Styles de base". 
    
 ## Version C++
 
@@ -60,6 +60,17 @@ Les commentares devraient utiliser deux formats dependemment du contexte de ce q
 ### Header Guards
 
    Comme toujours les headers doivent avoir un header guard et le nomage de ceux-ci doit suivre ce pattern: `|NOM_DU_RPOJET|_|NOM_DU_FICHER|_H_` (`|` sont seulement presents pour specifier que leur contenu ne fait que decrire ce qui devrait etre present). `|NOM_DU_PROJET|` n'est pas necessaire si vos fichiers sont dans les limites d'une source qui n'a pas pour objectif d'etre inclue en tant que dependence de quelconque facon dans d'autre projet.
+
+<br />
+
+Ajoutez un commentaire `//` contenant le nom définit devant le `#endif` exemple:
+
+```C++
+#ifndef TEST_H_
+#define TEST_H_
+
+#endif // TEST_H_
+```
 
 ### Ordre d'inclusion 
 
