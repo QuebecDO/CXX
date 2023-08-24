@@ -5,6 +5,10 @@ FILED WITH GRAMMAR MISTAKES, TO FIX AT FINAL VERSION
 ## Introduction
 
    L'honneur de la meilleure convention d'écriture pour le C++ peut être sans aucune hésitation honoré à <a href="https://google.github.io/styleguide/cppguide.html#General_Naming_Rules">Google C++ Style Guide</a>, mais elle n'atteint tout de même pas nos attentes personnelles. C'est pourquoi avec une grande influence de celle-ci et de notre expérience, nous avons decidé de créer la nôtre. Nous n'avons pas pour objectif de la standardiser au monde entier, vous pouvez donc la considérer comme n'était rien de plus qu'une convention personnelle.
+
+<br />
+
+   La convention pour ajouter de nouvelles spécifications de style consiste a déterminer si celle-ci affecte l'utilisation du langage (ou nécessite des sous-sections) ou pas. Si oui, vous devez lui créer une nouvelle section H2 (suivit de H3 pour les sous-détails) si aucune n'est présente, mais autrement simplement l'ajouter dans la section "Styles de base". 
    
 ## Version C++
 
@@ -42,6 +46,12 @@ void test()
 ```
 
 (La même chose s'applique aux classes, namespaces, enums, etc a l'exception des lambdas)
+
+### Commentaires
+
+Les commentares devraient utiliser deux formats dependemment du contexte de ce qui le suit:
+1. `/* COMMENTAIRE */` lorsque le code qui le suit est dans un bloque
+2. `// COMMENTAIRE` lorsque le code qui le suit est dans le meme bloque
 
 ## Headers
 
