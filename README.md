@@ -30,18 +30,6 @@ Toutes déclarations de type et namespace doit utiliser la convetion pascal case
 
 ## Styles de base
 
-### Initialisation de variables
-
-Utilisez l'opérateur `{}` pour initializer vos variables l'hors de leur déclaration. Exemple:
-
-```C++
-// !! INVALIDE !!
-int test = 5;
-
-// VALIDE
-int test{5};
-```
-
 ### Brackets
 
 Aucune `{` ne devrait être sur la même ligne que son parent. Exemple:
@@ -64,6 +52,18 @@ void test()
 Les commentares devraient utiliser deux formats dependemment du contexte de ce qui le suit:
 1. `/* COMMENTAIRE */` lorsque le code qui le suit est dans un bloque
 2. `// COMMENTAIRE` lorsque le code qui le suit est dans le meme bloque
+
+### Initialisation de variables
+
+Utilisez l'opérateur `{}` pour initializer vos variables l'hors de leur déclaration. Exemple:
+
+```C++
+// !! INVALIDE !!
+int test = 5;
+
+// VALIDE
+int test{5};
+```
 
 ## Headers
 
