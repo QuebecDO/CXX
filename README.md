@@ -1,5 +1,5 @@
-FILED WITH GRAMMAR MISTAKES, TO FIX AT FINAL VERSION
-
+FILED WITH GRAMMAR MISTAKES, TO FIX AT FINAL VERSION (REFORMAT SECTIONS AND TITLES TOO)
+ 
 # CXX
 
 ## Introduction
@@ -94,4 +94,9 @@ L'ordre d'inclusion devrait être comme cela (chacun separe par un line feed):
 5. Dépendences (tout ce qui est externe au projet)
 6. Headers de projet
 
+## Pointeurs
+
+### Mémoire dynamique
+
+L'hors de l'utilisation de mémoire dynamique par allocation, utilisez toujours les pointeurs intelligents sauf lorsque impossible. `std::unique_ptr` lorsque votre pointeur ne sera pas copié ou déplacé et `std::shared_ptr` lorsqu'il le sera.
 
