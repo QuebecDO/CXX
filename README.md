@@ -67,7 +67,7 @@ int test{5};
 
 ## Headers
 
-   Comme toute convention C++, tous les fichiers `.cpp` devraient être accommodés d'un fichier `.h` / header. Encore, tout autre extension de fichier que `.h` doit être évité (comme `.hpp`) L'utilisation de fichiers header seul (non accommodé par un `.cpp`) est permis.
+> Comme toute convention C++, tous les fichiers `.cpp` devraient être accommodés d'un fichier `.h` / header. Encore, tout autre extension de fichier que `.h` doit être évité (comme `.hpp`) L'utilisation de fichiers header seul (non accommodé par un `.cpp`) est permis.
 
 ### Header Guards
 
