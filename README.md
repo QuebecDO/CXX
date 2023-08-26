@@ -12,13 +12,13 @@ La convention habituelle pour ajouter de nouvelles spécifications de style cons
    
 ## Version C++
 
-   Toute fonctionalité dans C++17 sera considéré, mais aucune provenant de versions supérieures. La convention devrait cependant être respectée pour les nouvelles versions a l'exception de cas d'obsolescence (Ce qui ne devrait certainement pas arriver pour des raisons évidentes).
+&emsp;Toute fonctionalité dans C++17 sera considéré, mais aucune provenant de versions supérieures. La convention devrait cependant être respectée pour les nouvelles versions a l'exception de cas d'obsolescence (Ce qui ne devrait certainement pas arriver pour des raisons évidentes).
 
 ## Nomage
 
 ### Nomage de fichiers
 
-   Les fichiers headers et sources C++ devraient seulement avoir une terminaison `.cpp` ou `.h`, donc pas de `.cc` ou `.hpp`. Tout nom de fichier devrait soit inclure aucunes majuscules ou une au début de son nom et de chaque mot dans son nom. Examples valides: `test.h`, `VulkanLib.h`, `vulkanlib.h`. Les `-` et `_` sont interdits dans le nom des fichiers sauf s'il y a une raison spécifique de faire ainsi autre que "c'est beau".
+&emsp;Les fichiers headers et sources C++ devraient seulement avoir une terminaison `.cpp` ou `.h`, donc pas de `.cc` ou `.hpp`. Tout nom de fichier devrait soit inclure aucunes majuscules ou une au début de son nom et de chaque mot dans son nom. Examples valides: `test.h`, `VulkanLib.h`, `vulkanlib.h`. Les `-` et `_` sont interdits dans le nom des fichiers sauf s'il y a une raison spécifique de faire ainsi autre que "c'est beau".
 
 ### Nomage de fonctions / methodes et variables
 
@@ -67,11 +67,11 @@ int test{5};
 
 ## Headers
 
-   Comme toute convention C++, tous les fichiers `.cpp` devraient être accommodés d'un fichier `.h` / header. Encore, tout autre extension de fichier que `.h` doit être évité (comme `.hpp`) L'utilisation de fichiers header seul (non accommodé par un `.cpp`) est permis.
+&emsp;Comme toute convention C++, tous les fichiers `.cpp` devraient être accommodés d'un fichier `.h` / header. Encore, tout autre extension de fichier que `.h` doit être évité (comme `.hpp`) L'utilisation de fichiers header seul (non accommodé par un `.cpp`) est permis.
 
 ### Header Guards
 
-   Comme toujours les headers doivent avoir un header guard et le nomage de ceux-ci doit suivre ce pattern: `|NOM_DU_RPOJET|_|NOM_DU_FICHER|_H_` (`|` sont seulement presents pour specifier que leur contenu ne fait que decrire ce qui devrait être present). `|NOM_DU_PROJET|` n'est pas necessaire si vos fichiers sont dans les limites d'une source qui n'a pas pour objectif d'être inclue en tant que dependence de quelconque facon dans d'autre projet.
+&emsp;Comme toujours les headers doivent avoir un header guard et le nomage de ceux-ci doit suivre ce pattern: `|NOM_DU_RPOJET|_|NOM_DU_FICHER|_H_` (`|` sont seulement presents pour specifier que leur contenu ne fait que decrire ce qui devrait être present). `|NOM_DU_PROJET|` n'est pas necessaire si vos fichiers sont dans les limites d'une source qui n'a pas pour objectif d'être inclue en tant que dependence de quelconque facon dans d'autre projet.
 
 <br />
 
@@ -98,5 +98,5 @@ L'ordre d'inclusion devrait être comme cela (chacun separe par un line feed):
 
 ### Mémoire dynamique
 
-L'hors de l'utilisation de mémoire dynamique par allocation, utilisez toujours les pointeurs intelligents sauf lorsque impossible. `std::unique_ptr` lorsque votre pointeur ne sera pas copié ou déplacé et `std::shared_ptr` lorsqu'il le sera.
+&emsp;L'hors de l'utilisation de mémoire dynamique par allocation, utilisez toujours les pointeurs intelligents sauf lorsque impossible. `std::unique_ptr` lorsque votre pointeur ne sera pas copié ou déplacé et `std::shared_ptr` lorsqu'il le sera.
 
